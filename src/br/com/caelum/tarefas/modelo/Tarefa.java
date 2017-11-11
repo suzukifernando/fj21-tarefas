@@ -2,8 +2,12 @@ package br.com.caelum.tarefas.modelo;
 
 import java.util.Calendar;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Tarefa {
 	private Long id;
+	@NotNull(message="Escreva alguma coisa") @Size(min=5, max=255, message="Atenção no tamanho")
 	private String descricao;
 	private boolean finalizado;
 	private Calendar dataFinalizacao;
