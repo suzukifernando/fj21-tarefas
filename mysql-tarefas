@@ -1,0 +1,6 @@
+Table: tarefas
+Columns:
+id	bigint(20) AI PK
+descricao	varchar(255)
+finalizado	tinyint(1)
+dataFinalizacao	date
